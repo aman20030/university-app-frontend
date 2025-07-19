@@ -1,24 +1,28 @@
 /* UniversityTable.css */
 
-body, html {
+* {
   margin: 0;
   padding: 0;
-  background-color: #000;
-  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden;
+  background-color: #000;
+  font-family: Arial, sans-serif;
 }
 
 .uni-table-wrapper {
   min-height: 100vh;
-  background-color: #000;
+  padding: 40px 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
+  align-items: center;
   justify-content: flex-start;
-  box-sizing: border-box;
-  padding: 40px 20px; /* Top-Bottom 40px, Left-Right 20px */
+  background-color: #000;
+  width: 100%;
 }
 
 .uni-heading {
@@ -31,13 +35,14 @@ body, html {
 
 .uni-table {
   width: 100%;
-  max-width: 1200px; /* Prevent too wide table */
+  max-width: 1200px;
   overflow-x: auto;
 }
 
 .uni-table .tabulator {
+  width: 100% !important;
+  min-width: 800px;
   background-color: #000 !important;
   border-radius: 10px;
-  width: 100% !important;
   box-shadow: 0 0 12px rgba(0, 255, 200, 0.3);
 }
