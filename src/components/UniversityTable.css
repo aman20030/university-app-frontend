@@ -2,7 +2,7 @@ body {
   margin: 0;
   background-color: #000;
   font-family: Arial, sans-serif;
-  overflow-x: hidden; /* Extra safety */
+  overflow-x: hidden;
 }
 
 .uni-table-wrapper {
@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center the table vertically */
+  justify-content: center;
 }
 
 .uni-heading {
@@ -27,14 +27,15 @@ body {
 
 .uni-table {
   width: 100%;
-  max-width: 1200px; /* Optional: to limit the table size */
+  max-width: 1200px;
+  height: 70vh; /* Container height */
+  overflow: hidden;
 }
 
 .uni-table .tabulator {
   width: 100% !important;
-  height: 70vh; /* Make the box taller */
+  height: 100% !important; /* Fill parent to make body scrollable */
   background-color: #000 !important;
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 255, 200, 0.3);
-  overflow-x: hidden;
 }

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { ReactTabulator } from "react-tabulator";
-import "react-tabulator/lib/styles.css"; 
-import "react-tabulator/lib/css/tabulator_midnight.min.css"; 
+import "react-tabulator/lib/styles.css";
+import "react-tabulator/lib/css/tabulator_midnight.min.css";
 import axios from "axios";
-import "./UniversityTable.css"; 
+import "./UniversityTable.css";
 
 const UniversityTable = () => {
   const [data, setData] = useState([]);
@@ -46,12 +46,13 @@ const UniversityTable = () => {
         <ReactTabulator
           data={data}
           columns={columns}
-          layout={"fitData"}
+          layout={"fitDataStretch"}
           pagination={"local"}
-          paginationSize={7}
+          paginationSize={10}
           options={{
             movableColumns: true,
             resizableRows: true,
+            height: "100%", // Enables scrollable body with fixed header
           }}
           className="tabulator-midnight"
         />
