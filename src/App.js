@@ -1,13 +1,8 @@
-import React from 'react';
-import UniversityTable from './UniversityTable';
+import React from "react";
+import UniversityTable from "./components/UniversityTable";
 
-const App = () => {
-  return (
-    <div style={{ padding: '20px' }}>
-      <h1>US Universities</h1>
-      <UniversityTable />
-    </div>
-  );
-};
+function App() {
+  return <UniversityTable />;
+}
 
 export default App;
