@@ -3,7 +3,7 @@ import { ReactTabulator } from "react-tabulator";
 import "react-tabulator/lib/styles.css"; 
 import "react-tabulator/lib/css/tabulator_midnight.min.css"; 
 import axios from "axios";
-import "./UniversityTable.css"; /
+import "./UniversityTable.css"; 
 
 const UniversityTable = () => {
   const [data, setData] = useState([]);
